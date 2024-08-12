@@ -1,0 +1,13 @@
+--- #start of an ansible playbook
+- name: Intro to ansible playbooks #Describes our play
+  hosts: all # defines the host group in your inventory
+  become: yes # the become keyword enables user priveledge escalation. Think: "become this user that is defined, 
+              #  so I can have access to execute this palybook."
+  tasks: #Tasks are what you want to get done with the playbook. they are defined in a list format under
+         # the task label.
+  - name: Start servers with permissions # Each task requires a name. In this example we are starting some servers
+    command: server start webServer1     # that we have permissions on, so we can extract and copy some specific data.
+    #Example of a start server command
+
+  - name: Test if server connection is good
+  
