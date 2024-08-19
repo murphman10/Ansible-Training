@@ -24,6 +24,6 @@
       group: foo
       mode: '0644'
   when: webServer1 == connected # a contitional to execute this copyying directory procedure when we are connected to webServer1
-
+... #End of an ansible playbook
     ansible-playbook PlaybookDemp.yml #this command runs an ansible playbook
   
